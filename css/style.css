@@ -1,0 +1,12 @@
+body {
+	background-image: "images/backgrounddiamonds2.jpg" no-repeat;
+}
+
+button {
+	width: 150px;
+	height: 150px;
+}
+
+#box1 {
+	background-image: "images/pinkroundcrystal.png";
+}
