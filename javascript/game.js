@@ -44,20 +44,11 @@ var crystalNumber4 = randomizer (1,12);
 
 	gameLife = 3;
 
-//reset target number and crystal number
-
-	// targetNumber = [];
-	// crystalNumber1 = [];
-	// crystalNumber2 = [];
-	// crystalNumber3 = [];
-	// crystalNumber4 = [];
-
 //when start button is clicked generate random number and show on screen.
 	$("#gameStart").click(function() {
        
      $("#randomNumber").html(targetNumber);  //inputs target number
-
-
+     
     });
 
     console.log(crystalNumber1);
@@ -119,6 +110,14 @@ var crystalNumber4 = randomizer (1,12);
 
 
 //things tried that didn't work yet
+	//reset target number and crystal number
+
+	// targetNumber = [];
+	// crystalNumber1 = [];
+	// crystalNumber2 = [];
+	// crystalNumber3 = [];
+	// crystalNumber4 = [];	
+
 	// 	$("#playerScores").html(userGuess);
 		
 	// 	});
