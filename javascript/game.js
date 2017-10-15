@@ -1,8 +1,8 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
-startGame();
+// startGame();
 
-});
+// });
 
 var minNumber = 19;
 var maxNumber = 120;
@@ -46,45 +46,51 @@ var crystalNumber4 = randomizer (1,12);
 
 //reset target number and crystal number
 
-	targetNumber = [];
-	crystalNumber1 = [];
-	crystalNumber2 = [];
-	crystalNumber3 = [];
-	crystalNumber4 = [];
+	// targetNumber = [];
+	// crystalNumber1 = [];
+	// crystalNumber2 = [];
+	// crystalNumber3 = [];
+	// crystalNumber4 = [];
 
 //when start button is clicked generate random number and show on screen.
 	$("#gameStart").click(function() {
        
      $("#randomNumber").html(targetNumber);  //inputs target number
+
+     // $("#box1").append(crystalNumber1);  //random crystal number
+     // $("#box2").append(crystalNumber2);  //random crystal number
+     // $("#box3").append(crystalNumber3);  //random crystal number
+     // $("#box4").append(crystalNumber4);  //random crystal number
+     
     });
 
 
 //when crystal button is clicked take that number and add it to the userGuess
 
-	$("#box*").click(function(){
+	// $("#box*").click(function(){
 
-		if(userGuess < targetNumber){
+	// 	if(userGuess < targetNumber){
 
-		userGuess = crystalNumber* + userGuess;
-		}
-	} 
+	// 	userGuess = crystalNumber* + userGuess;
+	// 	}
+	// } 
 
-		elseif(userGuess===targetNumber){
-			counterWins++;
-			function myFunction(){
-				document.getElementById("wins").innerHTML "Winner, Winner, Chicken Dinner"
-			}
-		}
+	// 	elseif(userGuess===targetNumber){
+	// 		counterWins++;
+	// 		function myFunction(){
+	// 			document.getElementById("wins").innerHTML "Winner, Winner, Chicken Dinner"
+	// 		}
+	// 	}
 
-		else(userGuess > targetNumber){
-			counterLoss++;
-			function myFunction(){
-				document.getElementById("loss").innerHTML = "You Lose. Time to Take a Math Class.";
-		}
+	// 	else(userGuess > targetNumber){
+	// 		counterLoss++;
+	// 		function myFunction(){
+	// 			document.getElementById("loss").innerHTML = "You Lose. Time to Take a Math Class.";
+	// 	}
 		
-		$("#playerScores").html(userGuess);
+	// 	$("#playerScores").html(userGuess);
 		
-		});
+	// 	});
 
 
 		
@@ -92,20 +98,20 @@ var crystalNumber4 = randomizer (1,12);
 
 	
 
-     $("#box1").append(crystalNumber1);  //random crystal number
-     $("#box2").append(crystalNumber2);  //random crystal number
-     $("#box3").append(crystalNumber3);  //random crystal number
-     $("#box4").append(crystalNumber4);  //random crystal number
+ //     $("#box1").append(crystalNumber1);  //random crystal number
+ //     $("#box2").append(crystalNumber2);  //random crystal number
+ //     $("#box3").append(crystalNumber3);  //random crystal number
+ //     $("#box4").append(crystalNumber4);  //random crystal number
 
-     $("#box1").click(function() {
-     	//take the number and add it
-     	crystalNumber1
+ //     $("#box1").click(function() {
+ //     	//take the number and add it
+ //     	crystalNumber1
      
 
-     	var playerGuess = 
+ //     	var playerGuess = 
   
         
-      });
+ //      });
 	console.log(crystalNumber1);
 	console.log(crystalNumber2);
 	console.log(crystalNumber3);
@@ -114,7 +120,7 @@ var crystalNumber4 = randomizer (1,12);
 	// $("*#box").on("click", function(){
 	// 	var crystalNumber = Math.floor((Math.random() * 12) +1);
 	// 	$('crystalNumber') 
-}
+// }
 
 // 	})
 

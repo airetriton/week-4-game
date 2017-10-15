@@ -19,9 +19,9 @@
 </head>
 <body>
 	
-	<div class="container">
+	<div class="container-fluid">
 	<!--header-->
-	<h1>Crystals Collector</h1>
+	<h1 class="center-text">Crystals Collector</h1>
 
 	<!--directions-->
 	<p>Can you collect crystals to solve the problem? Each crystal has a different value, you win the game by matching your total score to the random number shown below.</p>
@@ -30,7 +30,7 @@
 
 	<!--random number between 19-120-->
 	<div class="start">
-		<button id="gameStart" class="btn btn-success btn-lg">Start</button>
+		<button id="gameStart" class="btn btn-primary btn-lg btn-block">Start</button>
 	</div>	
 
 	<div id="randomNumber"></div>
@@ -60,8 +60,10 @@
 
 	<!--win-loss table, does not reset - aggregate-->
 	<div class="win-loss">
+		<div class="alert alert-info" role="alert">
 		<p>Wins:</p><p id="wins"></p>
 		<p>Losses:</p><p id="loss"></p>
+	</div>
 	</div>
 
 </div>
