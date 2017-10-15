@@ -81,10 +81,13 @@ var crystalNumber4 = randomizer (1,12);
 			function myFunction(){
 				document.getElementById("loss").innerHTML = "You Lose. Time to Take a Math Class.";
 		}
+		
+		$("#playerScores").html(userGuess);
+		
 		});
 
 
-		$("#playerScores").html(userGuess)
+		
 
 
 	

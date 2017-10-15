@@ -29,3 +29,14 @@ img {
 img a:hover {
 	t
 }
+
+#playerScores {
+	margin: 20px;
+	border: 2px solid #6e7584;
+	height: 20px;
+}
+
+.win-loss {
+	border: 2px solid #6e7584;
+	height: 20px;
+}
