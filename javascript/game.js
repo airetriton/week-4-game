@@ -13,7 +13,7 @@ var randomizer = function getRandomInt(minNumber, maxNumber) {
 };
 
 //collects all of the numbers the user clicks to get to target
-var userGuess = [];
+var userGuess = 0;
 
 //lives
 var gameLife = 0;
@@ -57,44 +57,96 @@ var crystalNumber4 = randomizer (1,12);
        
      $("#randomNumber").html(targetNumber);  //inputs target number
 
-     // $("#box1").append(crystalNumber1);  //random crystal number
-     // $("#box2").append(crystalNumber2);  //random crystal number
-     // $("#box3").append(crystalNumber3);  //random crystal number
-     // $("#box4").append(crystalNumber4);  //random crystal number
-     
+
     });
 
+    console.log(crystalNumber1);
+	console.log(crystalNumber2);
+	console.log(crystalNumber3);
+	console.log(crystalNumber4);
+
+	
+
+	$("#box1").click(function() {
+		$("#playerScores").html(crystalNumber1);
+	});
+	
+	$("#box2").click(function() {
+		$("#playerScores").html(crystalNumber2);
+		
+	});
+	
+	$("#box3").click(function() {
+		$("#playerScores").html(crystalNumber3);
+		
+	});
+
+	$("#box4").click(function() {
+		$("#playerScores").html(crystalNumber4);
+		
+	});
+
+	//$("#playerScores").html(totalVal);
+
+	
+
+	
 
 //when crystal button is clicked take that number and add it to the userGuess
 
-	// $("#box*").click(function(){
+	$(".number").click(function(){
 
-	// 	if(userGuess < targetNumber){
-
-	// 	userGuess = crystalNumber* + userGuess;
-	// 	}
-	// } 
-
-	// 	elseif(userGuess===targetNumber){
-	// 		counterWins++;
-	// 		function myFunction(){
-	// 			document.getElementById("wins").innerHTML "Winner, Winner, Chicken Dinner"
-	// 		}
-	// 	}
-
-	// 	else(userGuess > targetNumber){
-	// 		counterLoss++;
-	// 		function myFunction(){
-	// 			document.getElementById("loss").innerHTML = "You Lose. Time to Take a Math Class.";
-	// 	}
+		if(userGuess===targetNumber){
+			counterWins++;
+			document.getElementById("wins").innerHTML ="Winner, Winner, Chicken Dinner.";
+			}
+		else if(userGuess > targetNumber){
+			counterLoss ++;
+			gameLife -1;
+			document.getElementById("loss").innerHTML ="You Lose. Time to Take a Math Class.";
+			}
+		});
 		
+
+
+
+
+
+
+
+
+
+
+
+//things tried that didn't work yet
 	// 	$("#playerScores").html(userGuess);
 		
 	// 	});
 
 
 		
+	// var totalVal = parseInt(newVal1) + parseInt(newVal2) + parseInt(newVal3) + parseInt(newVal4);
 
+
+	// console.log(userGuess);
+
+	// 	userGuess = parseInt(userGuess);
+	// 	crystalNumber1 = parseInt(crystalNumber1);
+	// 	crystalNumber2 = parseInt(crystalNumber2);
+	// 	crystalNumber3 = parseInt(crystalNumber3);
+	// 	crystalNumber4 = parseInt(crystalNumber4);
+
+	// 	})	
+
+			
+	// }
+
+	
+	// $("#box*").click(function() {
+	// 	userGuess = crystalNumber1 + userGuess;
+	// 	$("#playerScores").text(userGuess);
+
+	// });
 
 	
 
@@ -112,10 +164,7 @@ var crystalNumber4 = randomizer (1,12);
   
         
  //      });
-	console.log(crystalNumber1);
-	console.log(crystalNumber2);
-	console.log(crystalNumber3);
-	console.log(crystalNumber4);
+	
 
 	// $("*#box").on("click", function(){
 	// 	var crystalNumber = Math.floor((Math.random() * 12) +1);
@@ -138,19 +187,9 @@ var crystalNumber4 = randomizer (1,12);
 
 
 
-// $('#box1').click(function() {
-// 	for(var i =0; i < crystalNumber; i++) {
-// 		playerScores.add();
-// 	});
 
-// $('#box2').click(function() {
-// 	Math.floor((math.random() * 12) +1);
-// 	});
 
-// $('#box3').click(function() {
-// 	Math.floor((math.random() * 12) +1);
-// 	});
-
-// $('#box4').click(function() {
-// 	Math.floor((math.random() * 12) +1);
-// 	});
+// $("#box1").append(crystalNumber1);  //random crystal number
+     // $("#box2").append(crystalNumber2);  //random crystal number
+     // $("#box3").append(crystalNumber3);  //random crystal number
+     // $("#box4").append(crystalNumber4);  //random crystal number
