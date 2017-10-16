@@ -38,25 +38,25 @@
 	<!--//four crystals displayed as buttons, random value each game-->
 
 	<div class="wrapper">
-		<div id="gemstone1">
-			<button class="number" id="box1">
+		<div class="crystal-image">
+			<button class="number" id="box1" data="crystalNumber1">
 				<img src="images/greengemstone1.png">
 			</button>
-			<button class="number" id="box2">
+			<button class="number" id="box2" data="crystalNumber2">
 				<img src="images/ltbluegemstone1.png">
 			</button>
-			<button class="number" id="box3">
+			<button class="number" id="box3" data="crystalNumber3">
 				<img src="images/purplegemstone1.png">
 			</button>
-			<button class="number" id="box4">
+			<button class="number" id="box4" data="crystalNumber4">
 				<img src="images/pinkgemstone1.png">
 			</button>
-		</div>
+		</div>	
 	</div>
 
 	<!--show player score, reset each game, do not refresh page-->
-	<p>Your Score:</p>
-	<div id="playerScores"><p>Your Score:</p></div>
+	<h2>Your Score:<h2>
+	<div id="playerScores"></div>
 
 	<!--win-loss table, does not reset - aggregate-->
 	<div class="win-loss">
