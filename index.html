@@ -16,58 +16,88 @@
 	<!--bootstrap-->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 	
-	<div class="container-fluid">
+	<div class="container">
 	<!--header-->
-	<h1 class="center-text">Crystals Collector</h1>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<h1 class="header"><strong>Crystals Collector</strong></h1>
+			</div>
+		</div>		
 
 	<!--directions-->
-	<p>Can you collect crystals to solve the problem? Each crystal has a different value, you win the game by matching your total score to the random number shown below.</p>
-	<p>If your score goes above the random number you lose.</p>
-	<p>Each time the game starts, the values of the crystals change.</p>
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<div class="directions">
+				<h3>Can you collect crystals to solve the problem? Each crystal has a different value, you win the game by matching your total score to the random number shown below.</h3>
+				<h3>If your score goes above the random number you lose.</h3>
+				<h3>Each time the game starts, the values of the crystals change.</h3>
+			</div>
 
 	<!--random number between 19-120-->
-	<div class="start">
-		<button id="gameStart" class="btn btn-primary btn-lg btn-block">Start</button>
-	</div>	
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<div class="start">
+				<button id="gameStart" class="btn btn-lg btn-block">Start</button>
+			</div>
+		</div>
+	</div>			
 
-	<div id="randomNumber"></div>
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			<div id="randomNumber"><span class="label">Match This Number</span>
+			</div>
+		</div>
+
+		<div class="col-lg-6 col-md-6 col-sm-12">
+		<!--show player score, reset each game, do not refresh page-->
+			<div id="playerScores"><span class="label">Your Score</span></div>
+	</div>		
 
 	<!--//four crystals displayed as buttons, random value each game-->
 
-	<div class="wrapper">
-		<div class="crystal-image">
-			<button class="number" id="box1" data="crystalNumber1">
-				<img src="images/greengemstone1.png">
-			</button>
-			<button class="number" id="box2" data="crystalNumber2">
-				<img src="images/ltbluegemstone1.png">
-			</button>
-			<button class="number" id="box3" data="crystalNumber3">
-				<img src="images/purplegemstone1.png">
-			</button>
-			<button class="number" id="box4" data="crystalNumber4">
-				<img src="images/pinkgemstone1.png">
-			</button>
-		</div>	
-	</div>
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<div class="wrapper">
+				<div class="crystal-image">
+					<button class="number" id="box1" data="crystalNumber1">
+						<img src="images/greengemstone1.png">
+					</button>
+					<button class="number" id="box2" data="crystalNumber2">
+						<img src="images/ltbluegemstone1.png">
+					</button>
+					<button class="number" id="box3" data="crystalNumber3">
+						<img src="images/purplegemstone1.png">
+					</button>
+					<button class="number" id="box4" data="crystalNumber4">
+						<img src="images/pinkgemstone1.png">
+					</button>
+				</div>	
+			</div>
+		</div>
+	</div>		
 
-	<!--show player score, reset each game, do not refresh page-->
-	<h2>Your Score:<h2>
-	<div id="playerScores"></div>
+	
 
 	<!--win-loss table, does not reset - aggregate-->
-	<div class="win-loss">
-		<div class="alert alert-info" role="alert">
-		<p>Wins:</p><p id="wins"></p>
-		<p>Losses:</p><p id="loss"></p>
-	</div>
-	<div class="livesGame">
-		<div class="alert alert-info" role="alert">
-			<p>Lives:</p><p id="lives"></p>
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<div class="win-loss">
+				<div class="alert" >
+				<p>Wins:</p><p id="wins"></p>
+				<p>Losses:</p><p id="loss"></p>
+			</div>
 		</div>	
+	<div class="col-lg-6 col-md-6 col-sm-6">
+		<div class="livesGame">
+			<div class="alert" >
+				<p>Lives:</p><p id="lives"></p>
+			</div>
+		</div>		
 	</div>
 	</div>
 

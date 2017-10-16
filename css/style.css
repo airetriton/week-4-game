@@ -1,7 +1,36 @@
 body {
-	background-image: url("../images/backgrounddiamonds2.jpg") no-repeat;
-	background-color: #9c9c9c;
+	background: url("../images/backgrounddiamonds2.jpg");
+	font-family: "Pacifico", "Palatino Linotype", Impact, sans-serif ;	
 }
+
+.container-fluid{
+	
+}
+
+.header {
+	color: #8B636C;
+	background: url("../images/pinkdiamondsbkgrnd.jpg");	
+	border: 5px solid #C58E80;
+	font-size: 40px;
+	text-align: center;
+	font-weight: 900;
+	height: 75px;
+	padding: 10px;
+}
+
+.directions {
+	color:#8B636C;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+#gameStart {
+	background: url("../images/pinkdiamondsbkgrnd.jpg");
+	color: #8B636C;
+	font-weight: 900;
+	font-size: 24px;
+}
+
 
 button {
 	padding: 5px;
@@ -10,12 +39,36 @@ button {
 }
 
 #randomNumber {
-	border: 2px solid #6e7584;
+	position: relative;
+	height: 150px;
+	width: 175px;
+	border: 5px solid #C58E80;
 	padding: 10px;
 	margin: 10px;
 	text-align: center;
 	font-size: 32px;
+	float: left;
 	
+}
+
+.label {
+	position: absolute;
+	text-align: center;
+	background: url("../images/pinkdiamondsbkgrnd.jpg");
+	color: #8B636C;
+
+}
+
+#playerScores {
+	position: relative;
+	height: 150px;
+	width: 175px;
+	border: 5px solid #C58E80;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+	font-size: 32px;
+	float: left;
 }
 
 img {
@@ -24,18 +77,33 @@ img {
 	border: 20px #008080;
 	margin: 5px;
 	padding: 5px;
-}
-
-img a:hover {
-	t
-}
-
-#playerScores {
-	margin: 20px;
-	border: 2px solid #6e7584;
-	height: 20px;
+	clear: all;
 }
 
 .win-loss {
-	height: 20px;
+	background: url("../images/pinkdiamondsbkgrnd.jpg");
+	color: black;
+	height: 100px;
+	width: 200px;
+	border: 5px solid #C58E80;
+	padding: 10px;
+	margin: 20px;
+	text-align: left;
+	font-size: 18px;
+	float: left;
+	
+}
+
+.livesGame {
+	background: url("../images/pinkdiamondsbkgrnd.jpg");
+	color: black;
+	height: 100px;
+	width: 200px;
+	border: 5px solid #C58E80;
+	padding: 10px;
+	margin: 20px;
+	text-align: left;
+	font-size: 18px;
+	float: left;
+	
 }

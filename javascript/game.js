@@ -7,8 +7,6 @@ var randomizer = function getRandomInt(minNumber, maxNumber) {
     return Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
 };
 
-
-
 //creates the random numbers
 var targetNumber = randomizer (19,120);
 
@@ -56,10 +54,11 @@ var crystalNumber = [12, 7, 10, 4];
 	
 
 	$(".crystal-image").on("click", function() {
+    
     var crystalValue = ($(this).attr("data-crystalvalue"));
+    
     crystalValue = parseInt(crystalValue);
-    // We then add the crystalValue to the user's "counter" which is a global variable.
-    // Every click, from every crystal adds to the global counter.
+    
     userCounter += crystalValue;
 
     alert("New score: " + userCounter);
@@ -80,7 +79,7 @@ var crystalNumber = [12, 7, 10, 4];
 
 	 
 
-
+//things tried that didn't work yet
 
 	// while (totalVal < targetNumber) {
 
@@ -115,21 +114,6 @@ var crystalNumber = [12, 7, 10, 4];
 		// userGuess = parseInt(userGuess);
 		// totalVal += userGuess;
 		// $("#playerScores").html(userGuess);
-
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-//things tried that didn't work yet
 
 
 //when crystal button is clicked take that number and add it to the userGuess
@@ -174,14 +158,6 @@ var crystalNumber = [12, 7, 10, 4];
 
 // 	imageCrystal.attr("data-crystalvalue", crystalNumber);
 
-
-
-
-
-
-
-	
-	
 	
 	// $("#box2").click(function() {
 	// 	$("#playerScores").html(crystalNumber2);
@@ -253,7 +229,7 @@ var crystalNumber = [12, 7, 10, 4];
  //     	var playerGuess = 
   
         
- //      });
+ 
 	
 
 	// $("*#box").on("click", function(){
@@ -261,22 +237,11 @@ var crystalNumber = [12, 7, 10, 4];
 	// 	$('crystalNumber') 
 // }
 
-// 	})
-
-
-// });
-
 
 // $('button').click(function() {
 // //on button click assign random number and then add it to playerScores, if playerScore is greater
 
 // })
-
-
-
-
-
-
 
 
 // $("#box1").append(crystalNumber1);  //random crystal number
